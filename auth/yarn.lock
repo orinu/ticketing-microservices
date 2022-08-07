@@ -312,6 +312,14 @@ etag@~1.8.1:
   resolved "https://artifactory.rnd-hub.com:443/artifactory/api/npm/lego-npm-virt/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
+express-validator@^6.14.2:
+  version "6.14.2"
+  resolved "https://artifactory.rnd-hub.com:443/artifactory/api/npm/lego-npm-virt/express-validator/-/express-validator-6.14.2.tgz#6147893f7bec0e14162c3a88b3653121afc4678f"
+  integrity sha1-YUeJP3vsDhQWLDqIs2UxIa/EZ48=
+  dependencies:
+    lodash "^4.17.21"
+    validator "^13.7.0"
+
 express@^4.18.1:
   version "4.18.1"
   resolved "https://artifactory.rnd-hub.com:443/artifactory/api/npm/lego-npm-virt/express/-/express-4.18.1.tgz#7797de8b9c72c857b9cd0e14a5eea80666267caf"
@@ -500,6 +508,11 @@ is-number@^7.0.0:
   version "7.0.0"
   resolved "https://artifactory.rnd-hub.com:443/artifactory/api/npm/lego-npm-virt/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
   integrity sha1-dTU0W4lnNNX4DE0GxQlVUnoU8Ss=
+
+lodash@^4.17.21:
+  version "4.17.21"
+  resolved "https://artifactory.rnd-hub.com:443/artifactory/api/npm/lego-npm-virt/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=
 
 make-error@^1.1.1:
   version "1.3.6"
@@ -847,6 +860,11 @@ v8-compile-cache-lib@^3.0.1:
   version "3.0.1"
   resolved "https://artifactory.rnd-hub.com:443/artifactory/api/npm/lego-npm-virt/v8-compile-cache-lib/-/v8-compile-cache-lib-3.0.1.tgz#6336e8d71965cb3d35a1bbb7868445a7c05264bf"
   integrity sha1-Yzbo1xllyz01obu3hoRFp8BSZL8=
+
+validator@^13.7.0:
+  version "13.7.0"
+  resolved "https://artifactory.rnd-hub.com:443/artifactory/api/npm/lego-npm-virt/validator/-/validator-13.7.0.tgz#4f9658ba13ba8f3d82ee881d3516489ea85c0857"
+  integrity sha1-T5ZYuhO6jz2C7ogdNRZInqhcCFc=
 
 vary@~1.1.2:
   version "1.1.2"
