@@ -554,6 +554,19 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@ontickets-on/common@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@ontickets-on/common/-/common-1.0.4.tgz#40ffbf51202bc9157d40fb450e385d8d3d7cbe3c"
+  integrity sha512-a1PYCBBS2p2NFK7ce6T8W4TeVTIkO/TOP0lljL9zHPedyYlhDWkFwvTi2hUkPwZ+YyFxI6AsxEBCloviCR7dng==
+  dependencies:
+    "@types/cookie-session" "^2.0.44"
+    "@types/express" "^4.17.13"
+    "@types/jsonwebtoken" "^8.5.9"
+    cookie-session "^2.0.0"
+    express "^4.18.1"
+    express-validator "^6.14.2"
+    jsonwebtoken "^8.5.1"
+
 "@sinclair/typebox@^0.24.1":
   version "0.24.27"
   resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.24.27.tgz#d55643516a1546174e10da681a8aaa81e757452d"
@@ -711,6 +724,13 @@
   version "8.5.8"
   resolved "https://registry.yarnpkg.com/@types/jsonwebtoken/-/jsonwebtoken-8.5.8.tgz#01b39711eb844777b7af1d1f2b4cf22fda1c0c44"
   integrity sha512-zm6xBQpFDIDM6o9r6HSgDeIcLy82TKWctCXEPbJJcXb5AKmi5BNNdLXneixK4lplX3PqIVcwLBCGE/kAGnlD4A==
+  dependencies:
+    "@types/node" "*"
+
+"@types/jsonwebtoken@^8.5.9":
+  version "8.5.9"
+  resolved "https://registry.yarnpkg.com/@types/jsonwebtoken/-/jsonwebtoken-8.5.9.tgz#2c064ecb0b3128d837d2764aa0b117b0ff6e4586"
+  integrity sha512-272FMnFGzAVMGtu9tkr29hRL6bZj4Zs1KZNeHLnKqAvp06tAIcarTMwOh8/8bz4FmKRcMxZhZNeUAQsNLoiPhg==
   dependencies:
     "@types/node" "*"
 
