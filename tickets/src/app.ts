@@ -3,8 +3,10 @@ import "express-async-errors";
 import { json } from "body-parser";
 import cookieSession from "cookie-session";
 
-import { errorHandler } from  "@ontickets-on/common";
-import { NotFoundError } from  "@ontickets-on/common";
+import { createTicketsRouter } from "./routes/new";
+import { showTicketRouter } from "./routes/show";
+
+import { errorHandler, NotFoundError , currentUser   } from  "@ontickets-on/common";
 
 
 const app = express();
@@ -17,6 +19,11 @@ app.use(
     secure: process.env.NODE_ENV !== 'test',
   })
 );
+
+app.use(currentUser)
+
+app.use(createTicketsRouter)
+app.use(showTicketRouter)
 
 
 app.all("*", async () => {
