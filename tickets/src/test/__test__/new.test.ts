@@ -1,6 +1,7 @@
 import request from "supertest";
 import { app } from "../../app";
-import { Ticket } from '../../models/ticket'
+import { Ticket } from "../../models/ticket";
+import { natsWrapper } from "../../nats-wrapper";
 
 it("has a route handler listening to /api/tickets for post request", async () => {
   const res = await request(app).post("/api/tickets").send({});
@@ -57,19 +58,31 @@ it("return an error if an invalid price is provided", async () => {
     .expect(400);
 });
 it("create a ticket with valid inputs ", async () => {
-    let ticket = await Ticket.find({});
-    expect(ticket.length).toEqual(0)
+  let ticket = await Ticket.find({});
+  expect(ticket.length).toEqual(0);
 
-    await request(app)
+  await request(app)
     .post("/api/tickets")
     .set("Cookie", global.signin())
     .send({
       title: "dfsffsd",
-      price: 20
+      price: 20,
     })
     .expect(201);
 
-    ticket = await Ticket.find({});
-    expect(ticket.length).toEqual(1)
-    expect(ticket[0].price).toEqual(20)
+  ticket = await Ticket.find({});
+  expect(ticket.length).toEqual(1);
+  expect(ticket[0].price).toEqual(20);
+});
+
+it("publishes an event", async () => {
+  await request(app)
+    .post("/api/tickets")
+    .set("Cookie", global.signin())
+    .send({
+      title: "dfsffsd",
+      price: 20,
+    })
+    .expect(201);
+    expect(natsWrapper.client.publish).toHaveBeenCalled();
 });
