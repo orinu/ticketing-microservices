@@ -1,6 +1,6 @@
 {
   "name": "@ontickets-on/common",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -8,7 +8,7 @@
     "build/**/*"
   ],
   "scripts": {
-    "build": "npm run clean && tsc",
+    "build": " tsc",
     "clean": "del ./build/*",
     "pub": "npm run build && git add . && git commit -m \"Updates\" && npm version patch && npm publish"
   },

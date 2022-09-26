@@ -554,10 +554,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@ontickets-on/common@^1.0.10":
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/@ontickets-on/common/-/common-1.0.10.tgz#1283a46ca76d36284fa5fa324e15aeeb2c0ca7a4"
-  integrity sha512-lDtQaz/b70DD+V12q1xAyDvQk8QrC3xhcmSXc6IMVjiHGG5E8BAHpuPYb0yBz27bY2QBpGQEFIQ3n+Rcw5QJBQ==
+"@ontickets-on/common@^1.0.11":
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/@ontickets-on/common/-/common-1.0.11.tgz#7fddd3838726bb0d8748f92a351156fc5ce8a266"
+  integrity sha512-1eb/xcIz+tdcuw/0sJuJ9cMTiSSsgINXoeZB29VVX335rgMQI9c6/umY61/AOGBoFVnXA7xTHrCXzIeRpSITuw==
   dependencies:
     "@types/cookie-session" "^2.0.44"
     "@types/express" "^4.17.13"
@@ -730,7 +730,7 @@
 
 "@types/jsonwebtoken@^8.5.9":
   version "8.5.9"
-  resolved "https://registry.npmjs.org/@types/jsonwebtoken/-/jsonwebtoken-8.5.9.tgz"
+  resolved "https://registry.yarnpkg.com/@types/jsonwebtoken/-/jsonwebtoken-8.5.9.tgz#2c064ecb0b3128d837d2764aa0b117b0ff6e4586"
   integrity sha512-272FMnFGzAVMGtu9tkr29hRL6bZj4Zs1KZNeHLnKqAvp06tAIcarTMwOh8/8bz4FmKRcMxZhZNeUAQsNLoiPhg==
   dependencies:
     "@types/node" "*"
@@ -746,9 +746,9 @@
   integrity sha512-Y4XFY5VJAuw0FgAqPNd6NNoV44jbq9Bz2L7Rh/J6jLTiHBSBJa9fxqQIvkIld4GsoDOcCbvzOUAbLPsSKKg+uA==
 
 "@types/node@*":
-  version "18.7.16"
-  resolved "https://registry.npmjs.org/@types/node/-/node-18.7.16.tgz"
-  integrity sha512-EQHhixfu+mkqHMZl1R2Ovuvn47PUw18azMJOTwSZr9/fhzHNGXAJ0ma0dayRVchprpCj0Kc1K1xKoWaATWF1qg==
+  version "18.7.22"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.22.tgz#76f7401362ad63d9d7eefa7dcdfa5fcd9baddff3"
+  integrity sha512-TsmoXYd4zrkkKjJB0URF/mTIKPl+kVcbqClB2F/ykU7vil1BfWZVndOnpEIozPv4fURD28gyPFeIkW2G+KXOvw==
 
 "@types/prettier@^2.1.5":
   version "2.7.0"
