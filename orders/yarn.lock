@@ -554,10 +554,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@ontickets-on/common@^1.0.11":
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/@ontickets-on/common/-/common-1.0.11.tgz#7fddd3838726bb0d8748f92a351156fc5ce8a266"
-  integrity sha512-1eb/xcIz+tdcuw/0sJuJ9cMTiSSsgINXoeZB29VVX335rgMQI9c6/umY61/AOGBoFVnXA7xTHrCXzIeRpSITuw==
+"@ontickets-on/common@^1.0.12":
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/@ontickets-on/common/-/common-1.0.12.tgz#da341d729f90c28bc0c729b9fa61a2eb447e65a9"
+  integrity sha512-O1a8XIpFWWMBwbmM0/rn4nJ6697xCJENUZA33MpmCnybFdhA14FPvDY9B7uauEvhnYQTmXJKTIIb2Dyg850nXA==
   dependencies:
     "@types/cookie-session" "^2.0.44"
     "@types/express" "^4.17.13"
@@ -746,9 +746,9 @@
   integrity sha512-Y4XFY5VJAuw0FgAqPNd6NNoV44jbq9Bz2L7Rh/J6jLTiHBSBJa9fxqQIvkIld4GsoDOcCbvzOUAbLPsSKKg+uA==
 
 "@types/node@*":
-  version "18.7.22"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.22.tgz#76f7401362ad63d9d7eefa7dcdfa5fcd9baddff3"
-  integrity sha512-TsmoXYd4zrkkKjJB0URF/mTIKPl+kVcbqClB2F/ykU7vil1BfWZVndOnpEIozPv4fURD28gyPFeIkW2G+KXOvw==
+  version "18.7.23"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.23.tgz#75c580983846181ebe5f4abc40fe9dfb2d65665f"
+  integrity sha512-DWNcCHolDq0ZKGizjx2DZjR/PqsYwAcYUJmfMWqtVU2MBMG5Mo+xFZrhGId5r/O5HOuMPyQEcM6KUBp5lBZZBg==
 
 "@types/prettier@^2.1.5":
   version "2.7.0"
