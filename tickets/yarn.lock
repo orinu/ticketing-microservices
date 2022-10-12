@@ -554,10 +554,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@ontickets-on/common@^1.0.12":
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/@ontickets-on/common/-/common-1.0.12.tgz#da341d729f90c28bc0c729b9fa61a2eb447e65a9"
-  integrity sha512-O1a8XIpFWWMBwbmM0/rn4nJ6697xCJENUZA33MpmCnybFdhA14FPvDY9B7uauEvhnYQTmXJKTIIb2Dyg850nXA==
+"@ontickets-on/common@^1.0.13":
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/@ontickets-on/common/-/common-1.0.13.tgz#67da71c206d3cd6b1ebcd6939a73e83059c88a35"
+  integrity sha512-hr95VAQOizv0A7Wp4NkQ2jZkD43V+V4u4URRKpvrParHY8KTR9cxc8dlNFrjQmmBcfXrOMk6M2Abcp+uhwDjKg==
   dependencies:
     "@types/cookie-session" "^2.0.44"
     "@types/express" "^4.17.13"
