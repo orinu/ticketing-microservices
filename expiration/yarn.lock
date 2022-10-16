@@ -584,10 +584,10 @@
   resolved "https://registry.yarnpkg.com/@msgpackr-extract/msgpackr-extract-win32-x64/-/msgpackr-extract-win32-x64-2.1.2.tgz#f2d8b9ddd8d191205ed26ce54aba3dfc5ae3e7c9"
   integrity sha512-rIZVR48zA8hGkHIK7ED6+ZiXsjRCcAVBJbm8o89OKAMTmEAQ2QvoOxoiu3w2isAaWwzgtQIOFIqHwvZDyLKCvw==
 
-"@ontickets-on/common@^1.0.13":
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/@ontickets-on/common/-/common-1.0.13.tgz#67da71c206d3cd6b1ebcd6939a73e83059c88a35"
-  integrity sha512-hr95VAQOizv0A7Wp4NkQ2jZkD43V+V4u4URRKpvrParHY8KTR9cxc8dlNFrjQmmBcfXrOMk6M2Abcp+uhwDjKg==
+"@ontickets-on/common@^1.0.14":
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/@ontickets-on/common/-/common-1.0.14.tgz#95924b8f78cca0988bc8b1033aa111d8c7f80c32"
+  integrity sha512-j0g8NLOt/BkZvX6BR6zejbMq5DnqgJFCefjkQvA96n782PRJhBRLli/INO6Kw73tTlM+/OsNpPPVHIqd4nG5gQ==
   dependencies:
     "@types/cookie-session" "^2.0.44"
     "@types/express" "^4.17.13"
