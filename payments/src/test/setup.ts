@@ -5,7 +5,7 @@ import request from "supertest";
 import jwt from "jsonwebtoken";
 
 declare global {
-  var signin: () => string[];
+  var signin: (id?: string) => string[];
 }
 
 let mongo: any;
@@ -17,7 +17,7 @@ beforeAll(async () => {
   await mongoose.connect(mongoUri, {});
 });
 
-jest.mock('../nats-wrapper.ts')
+jest.mock("../nats-wrapper.ts");
 
 beforeEach(async () => {
   jest.clearAllMocks();
@@ -33,24 +33,24 @@ afterAll(async () => {
   await mongo.stop();
 });
 
-global.signin =  () => {
+global.signin = (id?: string) => {
   // build a JWT payload. {id, email}
   const payload = {
-    id: new mongoose.Types.ObjectId().toHexString(),
+    id: id || new mongoose.Types.ObjectId().toHexString(),
     email: "test@test.com",
   };
   // Create JWT
-  const token = jwt.sign(payload, process.env.JWT_KEY!)
+  const token = jwt.sign(payload, process.env.JWT_KEY!);
 
   // build session object {jwt: My_JWT}
-  const session = { jwt: token }
+  const session = { jwt: token };
 
   // turn into json
-  const sessionJSON = JSON.stringify(session)
+  const sessionJSON = JSON.stringify(session);
 
   // encode base64
-  const base64 = Buffer.from(sessionJSON).toString('base64')
+  const base64 = Buffer.from(sessionJSON).toString("base64");
 
   // return cookie
-  return [`session=${base64}`]; 
+  return [`session=${base64}`];
 };
