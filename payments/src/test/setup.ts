@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import { app } from "../app";
 import request from "supertest";
 import jwt from "jsonwebtoken";
+import { STRIPE_KEY } from "./env";
 
 declare global {
   var signin: (id?: string) => string[];
@@ -18,6 +19,7 @@ beforeAll(async () => {
 });
 
 jest.mock("../nats-wrapper.ts");
+process.env.STRIPE_KEY = STRIPE_KEY;
 
 beforeEach(async () => {
   jest.clearAllMocks();
