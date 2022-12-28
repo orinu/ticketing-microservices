@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default ({ req }) => {
-     // on server - request suold made to http://ingress-nginx...
+     // on server - request made to http://ingress-nginx...
   if (typeof window === "undefined") {
     return axios.create({
         baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
