@@ -7,3 +7,4 @@ expiration/node_modules
 payments/node_modules
 payments/src/test/env.ts
 nats-test
+.DS_Store
