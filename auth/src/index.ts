@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 import { app } from "./app";
 
 const start = async () => {
-  console.log("Starting up...");
+  console.log("Starting up....");
 
   // check if JWT_KEY defined
   if (!process.env.JWT_KEY) {
