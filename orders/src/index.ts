@@ -9,6 +9,7 @@ import { PaymentCreatedListener } from "./events/listeners/payment-created-liste
 import { app } from "./app";
 
 const start = async () => {
+  console.log("Starting....")
   // check if env defined
   if (!process.env.JWT_KEY) {
     throw new Error("process.env.JWT_KEY not found");
