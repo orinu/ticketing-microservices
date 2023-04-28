@@ -4,7 +4,7 @@ export default ({ req }) => {
      // on server - request made to http://ingress-nginx...
   if (typeof window === "undefined") {
     return axios.create({
-        baseURL: 'www.uniqueautohub.store',
+        baseURL: 'http://www.uniqueautohub.store/',
         headers: req.headers
     })
   }
