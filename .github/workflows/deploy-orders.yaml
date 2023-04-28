@@ -16,8 +16,8 @@ jobs:
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-      - run: cd orders && docker build -t cygnetops/orders .
-      - run: docker push cygnetops/orders
+      - run: cd orders && docker build -t orinu/orders .
+      - run: docker push orinu/orders
       - uses: digitalocean/action-doctl@v2
         with:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
