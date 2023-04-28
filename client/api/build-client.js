@@ -6,6 +6,7 @@ export default ({ req }) => {
     return axios.create({
         baseURL: 'http://www.uniqueautohub.store/',
         headers: req.headers
+        
     })
   }
   // on browser, no need to change base url
