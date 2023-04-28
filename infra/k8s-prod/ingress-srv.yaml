@@ -50,8 +50,8 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-  kubernetes.digitalocean.com/load-balancer-id: d6998224-b0bc-4578-8301-fe6225aca0bc
-  service.kubernetes.io/do-loadbalancer-disown: "true"
+    service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol: 'true'
+    service.beta.kubernetes.io/do-loadbalancer-hostname: 'www.uniqueautohub.store'
   labels:
     helm.sh/chart: ingress-nginx-2.0.3
     app.kubernetes.io/name: ingress-nginx
@@ -68,8 +68,8 @@ spec:
     - name: http
       port: 80
       protocol: TCP
+      targetPort: http
   selector:
     app.kubernetes.io/name: ingress-nginx
     app.kubernetes.io/instance: ingress-nginx
     app.kubernetes.io/component: controller
-
